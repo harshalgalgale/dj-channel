@@ -19,6 +19,10 @@ services:
             - "80:80"
         depends_on:
             - db
+    redis:
+        image: "redis:alpine"
+        ports:
+            - "6379:6379"
     # ng:
     #     container_name: ng
     #     build: angular
